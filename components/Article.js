@@ -92,6 +92,33 @@ const data = [
     date: 'Oct 11th, 2020',
     firstParagraph: `hhshdfhser hserhsehe yjdtheagr arawra  srhsrsyj `,
 
+    secondParagraph: `wrtjwrtjrtjwtjw`,
+
+    thirdParagraph: `wrtjrtjwrjt`
+  },
+  {
+    title: 'Hey',
+    date: 'Oct 11th, 2020',
+    firstParagraph: `Hey yo I'm working on js.`,
+
+    secondParagraph: `jetretjerjeyjeyje `,
+
+    thirdParagraph: `rwtjwrtjrjwertjwrt`
+  },
+  {
+    title: 'Hi',
+    date: 'Oct 11th, 2020',
+    firstParagraph: `hhshdfhser hserhsehe yjdtheagr arawra  srhsrsyj `,
+
+    secondParagraph: `kedtwrt wye5ue56ik5 `,
+
+    thirdParagraph: `uwh4t 65 6w546i6w4 `
+  },
+  {
+    title: 'Hello there',
+    date: 'Oct 11th, 2020',
+    firstParagraph: `ooap, didido da ooap, dididaduwa, oombop, dididada duuwap.`,
+
     secondParagraph: `kedtwrt wye5ue56ik5 `,
 
     thirdParagraph: `uwh4t 65 6w546i6w4 `
