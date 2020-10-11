@@ -114,3 +114,43 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+const articleMaker = (article, parentNode) => {
+	const div1 = document.createElement('div');
+  const h21 = document.createElement('h2');
+  const date1 = document.createElement('p');
+  const p1 = document.createElement('p');
+  const p2 = document.createElement('p');
+  const p3 = document.createElement('p');
+  const span1 = document.createElement('span');
+
+	const titleTextNode1 = document.createTextNode(article.title);
+	const dateTextNode1 = document.createTextNode(article.date);
+	const pTextNode1 = document.createTextNode(article.firstParagraph);
+	const pTextNode2 = document.createTextNode(article.secondParagraph);
+  const pTextNode3 = document.createTextNode(article.thirdParagraph);
+  const spanTextNode1 = document.createTextNode('+');
+
+  div1.classList.add('article');
+  date1.classList.add('date');
+  span1.classList.add('expandButton');
+
+	h21.appendChild(titleTextNode1);
+  date1.appendChild(dateTextNode1);
+  p1.appendChild(pTextNode1);
+  p2.appendChild(pTextNode2);
+  p3.appendChild(pTextNode3);
+  span1.appendChild(spanTextNode1);
+
+	div1.appendChild(h21);
+  div1.appendChild(date1);
+  div1.appendChild(p1);
+  div1.appendChild(p2);
+  div1.appendChild(p3);
+  div1.appendChild(span1);
+
+  parentNode.appendChild(div1);
+}
+
+const articles1 = document.querySelector('.articles');
+data.forEach(article => articleMaker(article, articles1));
