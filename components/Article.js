@@ -150,6 +150,10 @@ const articleMaker = (article, parentNode) => {
   div1.appendChild(span1);
 
   parentNode.appendChild(div1);
+
+  span1.addEventListener('click', () => {
+    div1.classList.toggle('article-open');
+  });
 }
 
 const articles1 = document.querySelector('.articles');
