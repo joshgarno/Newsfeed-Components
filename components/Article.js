@@ -190,7 +190,10 @@ const articleMaker = (article, parentNode) => {
   span1.addEventListener('click', () => {
     div1.classList.toggle('article-open');
   });
+
+  return div1;
 }
 
 const articles1 = document.querySelector('.articles');
+
 data.forEach(article => articleMaker(article, articles1));
